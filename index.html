@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Kingston Wok</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="Styles/styles.css">
   </head>
@@ -112,11 +113,39 @@
   </section>
   <section class="end-photo">
     <h1>Location</h1>
-    <div class=""
+    <div id="map"></div>
+    <div class="address">
+      <h2>Address</h2>
+      <hr class="style-two">
+      <p><i class="fas fa-location-arrow"></i>  1353 Ulster Ave. Kingston, NY 12401</p>
+      <p><i class="fas fa-phone"></i>  845-336-6979</p>
+      <button class="directions-btn">Directions</button>
+    </div>
+    <div class="yelp">
+      <h2>Check Out Our Yelp!</h2>
+      <hr class="style-two">
+      <i class="fab fa-yelp"></i>
+    </div>
   </section>
     <footer>
-      <p class="copyright">Kingston Wok LLC &copy</p>
+      <p class="copyright">Kingston Wok LLC Copyright &copy 2018</p>
     </footer>
+    <script>
+      function initMap() {
+          var uluru = {lat: 41.9705187, lng: -73.9926044};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhOhVPMm6GkQHFgJM7-pt_ldJjzrqgAdA&callback=initMap">
+      var mapKey = 'AIzaSyAhOhVPMm6GkQHFgJM7-pt_ldJjzrqgAdA';
+    </script>
     <script src="Javascript/script.js"></script>
   </body>
 </html>
