@@ -11,7 +11,7 @@
     <header>
       <div class="overlay">
         <ul class="nav-list">
-          <li class="list-item"><a href="#">Home</a></li>
+          <li class="list-item"><a href="index.html">Home</a></li>
           <li class="list-item"><a href="#">Reservations</a></li>
           <li class="list-item"><a href="#">Menu</a></li>
           <li class="list-item"><a href="#">About Us</a></li>
@@ -27,16 +27,53 @@
         </div>
       </div>
     </header>
-    <form class="reservation-form" action="index.html" method="post">
-      <div class="form-wrapper">
-        <div class="name">
-          <input type="text" name="" value="">
+    <div class="res-form">
+      <form class="reservation-form" action="index.html" method="post">
+        <h1>Reservations</h1>
+        <hr class="style-two hr-color">
+        <div class="form-wrapper">
+          <div class="date">
+            <label for="">Date</label>
+            <input type="date" name="" value="">
+          </div>
+          <div class="time">
+            <label for="">Time</label>
+            <input type="time" name="" value="">
+          </div>
+          <div class="party">
+            <label for="">Party</label>
+            <select>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+            </select>
+          </div>
+          <hr class="style-three">
+          <div class="wrap-h1">
+            <h1>Contact Details</h1>
+            <hr class="style-two hr-color">
+          </div>
+          <div class="name">
+            <label for="name">Name</label>
+            <input type="text" name="" value="">
+          </div>
+          <div class="number">
+            <label for="number">Phone Number</label>
+            <input type="tel" name="" value="">
+          </div>
+          <hr class="style-three">
+          <button class="submit-res" type="submit">Submit</button>
         </div>
-        <div class="name">
-          <input type="text" name="" value="">
-        </div>
-      </div>
-    </form>
-
+      </form>
+    </div>
+    <footer>
+      <p class="copyright">Kingston Wok LLC Copyright &copy 2018</p>
+    </footer>
+    <script src="Javascript/script.js"></script>
   </body>
 </html>
